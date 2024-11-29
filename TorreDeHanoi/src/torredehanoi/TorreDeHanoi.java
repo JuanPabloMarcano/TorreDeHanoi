@@ -6,7 +6,6 @@ import java.util.Scanner;
 public class TorreDeHanoi {
 
     public static void main(String[] args) {
-        int opcion = 0;
         Scanner sc = new Scanner(System.in);
         
         //Objetos de Tipo Pila que son los que almacenaran los discos
@@ -15,11 +14,12 @@ public class TorreDeHanoi {
         Pila auxiliar = new Pila();
         
         TorreDeHanoi torre = new TorreDeHanoi();
-        torre.Elegir(opcion);
+        torre.Elegir();
     }
     
-    void Elegir(int opcion){
+    void Elegir(){
         Scanner op = new Scanner(System.in);
+        int opcion = 0;
         System.out.println("Ingrese a cual Pila Quiere ir \n"
                 + "1. Origen \n"
                 + "2. Destino \n"
