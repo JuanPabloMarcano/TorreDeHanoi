@@ -13,6 +13,14 @@ public class TorreDeHanoi {
         Pila destino = new Pila();
         Pila auxiliar = new Pila();
         
+        //Obejeto de Tipo Lista Circular que contendra los Elementos de las torres
+        ListaCircular torreOrigen = new ListaCircular();
+        for (int i = 0; i < 10; i++) {
+            System.out.println("Ingrese los valores de los discos");
+            torreOrigen.agregar(sc.nextInt());
+        }
+        
+        //Aqui se elige la torre que quieres
         TorreDeHanoi torre = new TorreDeHanoi();
         torre.Elegir();
     }
@@ -21,9 +29,9 @@ public class TorreDeHanoi {
         Scanner op = new Scanner(System.in);
         int opcion = 0;
         System.out.println("Ingrese a cual Pila Quiere ir \n"
-                + "1. Origen \n"
-                + "2. Destino \n"
-                + "3. Auxiliar \n");
+                + "|1. Origen  | \n"
+                + "|2. Destino | \n"
+                + "|3. Auxiliar| \n");
         opcion = op.nextInt();
         switch (opcion) {
             case 1:
