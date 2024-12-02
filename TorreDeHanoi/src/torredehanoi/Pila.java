@@ -59,4 +59,8 @@ public class Pila {
             this.push(aux.pop());
         }
     }
+    
+    public int Peek(){
+        return top.getInformacion();
+    }
 }

@@ -15,16 +15,18 @@ public class TorreDeHanoi {
         
         //Obejeto de Tipo Lista Circular que contendra los Elementos de las torres
         ListaCircular torreOrigen = new ListaCircular();
-        for (int i = 0; i < 10; i++) {
-            System.out.println("Ingrese los valores de los discos");
-            torreOrigen.agregar(sc.nextInt());
+        for (int i = 1; i < 9; i++) {
+            torreOrigen.agregar(i);
         }
+        
+        System.out.println("Aqui se ven los valores que tiene la primera Torre");
+        torreOrigen.mostrar();
         
         //Aqui se elige la torre que quieres
         TorreDeHanoi torre = new TorreDeHanoi();
         torre.Elegir();
+        
     }
-    
     void Elegir(){
         Scanner op = new Scanner(System.in);
         int opcion = 0;

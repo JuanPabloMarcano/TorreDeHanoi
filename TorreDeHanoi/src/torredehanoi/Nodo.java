@@ -20,4 +20,13 @@ public class Nodo {
     Nodo() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
+
+
+    public int getInformacion() {
+        return informacion;
+    }
+
+    public void setInformacion(int informacion) {
+        this.informacion = informacion;
+    }
 }
